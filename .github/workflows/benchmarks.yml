@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read # to fetch code (actions/checkout)
+  actions: read # to allow actions to run properly
 
 # End the current execution if there is a new changeset in the PR.
 concurrency:
@@ -74,7 +75,7 @@ jobs:
 
       - name: Run sccache-cache
         id: sccache-setup
-        uses: mozilla-actions/sccache-action@v0.0.10
+        uses: mozilla-actions/sccache-action@v0.1.0
         continue-on-error: true
 
       - name: Export sccache
