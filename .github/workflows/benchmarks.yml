@@ -75,7 +75,7 @@ jobs:
 
       - name: Run sccache-cache
         id: sccache-setup
-        uses: mozilla-actions/sccache-action@v0.2.0
+        uses: mozilla-actions/sccache-action@v0.3.0
         continue-on-error: true
 
       - name: Export sccache
